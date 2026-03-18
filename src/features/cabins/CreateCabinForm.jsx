@@ -37,7 +37,7 @@ const FormRow2 = styled.div`
   }
 `;
 
-const CreateCabinForm = ({ cabinToEdit = {} }) => {
+const CreateCabinForm = ({ cabinToEdit = {}, onCloseModal }) => {
   const { id: editID, ...editValues } = cabinToEdit;
   const isEditSession = Boolean(editID);
 
@@ -60,13 +60,19 @@ const CreateCabinForm = ({ cabinToEdit = {} }) => {
       ? mutateEditCabin(
           { newCabinData: { ...data, image }, id: editID },
           {
-            onSuccess: (data) => reset(),
+            onSuccess: (data) => {
+              reset();
+              onCloseModal?.();
+            },
           },
         )
       : mutateCreateCabin(
           { ...data, image: image },
           {
-            onSuccess: (data) => reset(),
+            onSuccess: (data) => {
+              reset();
+              onCloseModal?.();
+            },
           },
         );
   }
@@ -76,7 +82,10 @@ const CreateCabinForm = ({ cabinToEdit = {} }) => {
   }
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit, onError)}>
+    <Form
+      onSubmit={handleSubmit(onSubmit, onError)}
+      type={onCloseModal ? "modal" : "regular"}
+    >
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
@@ -159,7 +168,12 @@ const CreateCabinForm = ({ cabinToEdit = {} }) => {
       </FormRow>
 
       <FormRow2>
-        <Button variation="secondary" size="medium" type="reset">
+        <Button
+          variation="secondary"
+          size="medium"
+          type="reset"
+          onClick={() => onCloseModal?.()}
+        >
           Cancel
         </Button>
         <Button disabled={isWorking} variation="primary" size="medium">

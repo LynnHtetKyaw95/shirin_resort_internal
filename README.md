@@ -42,21 +42,11 @@
 
 ## Technology Decisions
 
-| Features                   | Library           | Why use                                                                                                                                                                                  |
-| -------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👉 Routing                 | React Router      | The standard for React SPAs                                                                                                                                                              |
-| 👉 Styling                 | styled components | Very popular way of writing component-scoped CSS, right inside JS                                                                                                                        |
-| 👉 Remote state management | React Query       | The best way of managing remote, with features like caching, automatic re-fetching, pre-fetching, offline support, etc. Alternatives are SWR and RTK Query, but this is the most popular |
-| 👉 UI State Management     | Context API       | There is almost no UI state needed in this app, so one simple context with useState will be enough. No need for Redux                                                                    |
-| 👉 Form management         | React Hook Form   | Handling bigger forms can be a lot of work, such as manual state creation and error handling. A library can simplify all this                                                            |
-| 👉 Other tools             |                   | React icons/ React hot toast/ Recharts/ date-fns/ Supabase                                                                                                                               |
-
-hotel name: Shirin Resort (紫林リゾート) Purple Woods Resort
-
-| Element        | Color             | Hex       |
-| -------------- | ----------------- | --------- |
-| Main           | Royal Purple      | `#6A0DAD` |
-| Secondary      | Wisteria Purple   | `#A78BFA` |
-| Accent         | Lavender          | `#C4B5FD` |
-| Nature Balance | Deep Forest Green | `#1F3D2B` |
-| Luxury Touch   | Soft Gold         | `#D4AF37` |
+| Features                   | Library                                 | Why use                                                                                                                                                                                  |
+| -------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 Routing                 | React Router                            | The standard for React SPAs                                                                                                                                                              |
+| 👉 Styling                 | styled components                       | Very popular way of writing component-scoped CSS, right inside JS                                                                                                                        |
+| 👉 Remote state management | React Query                             | The best way of managing remote, with features like caching, automatic re-fetching, pre-fetching, offline support, etc. Alternatives are SWR and RTK Query, but this is the most popular |
+| 👉 UI State Management     | Context API, Compound Component Pattern | There is almost no UI state needed in this app, so one simple context with useState will be enough. No need for Redux                                                                    |
+| 👉 Form management         | React Hook Form                         | Handling bigger forms can be a lot of work, such as manual state creation and error handling. A library can simplify all this                                                            |
+| 👉 Other tools             |                                         | React icons/ React hot toast/ Recharts/ date-fns/ Supabase                                                                                                                               |
