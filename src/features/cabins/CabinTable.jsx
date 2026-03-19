@@ -5,6 +5,7 @@ import CabinRow from "./CabinRow";
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
 import { useSearchParams } from "react-router";
+import Empty from "../../ui/Empty";
 
 const CabinTable = () => {
   const { isPending, cabins } = useGetAllCabins();
@@ -12,6 +13,10 @@ const CabinTable = () => {
 
   if (isPending) {
     return <Spinner />;
+  }
+
+  if (!cabins.length) {
+    return <Empty resourceName="cabins" />;
   }
 
   // 1) FILTER
