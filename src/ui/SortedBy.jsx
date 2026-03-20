@@ -15,7 +15,7 @@ const SortedBy = ({ options }) => {
       options={options}
       value={currentSortBy}
       onChange={handleChange}
-      type="white"
+      $type="white"
     />
   );
 };

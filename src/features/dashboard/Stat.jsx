@@ -23,12 +23,12 @@ const Icon = styled.div`
   justify-content: center;
 
   /* Make these dynamic, based on the received prop */
-  background-color: var(--color-${(props) => props.color}-100);
+  background-color: var(--color-${(props) => props.$color}-100);
 
   & svg {
     width: 3.2rem;
     height: 3.2rem;
-    color: var(--color-${(props) => props.color}-700);
+    color: var(--color-${(props) => props.$color}-700);
   }
 `;
 
@@ -50,7 +50,7 @@ const Value = styled.p`
 function Stat({ icon, title, value, color }) {
   return (
     <StyledStat>
-      <Icon color={color}>{icon}</Icon>
+      <Icon $color={color}>{icon}</Icon>
       <Title>{title}</Title>
       <Value>{value}</Value>
     </StyledStat>

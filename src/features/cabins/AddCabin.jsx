@@ -7,7 +7,7 @@ const AddCabin = () => {
     <div>
       <Modal>
         <Modal.Open opens="cabin-form">
-          <Button variation="primary" size="large">
+          <Button $variation="primary" $size="large">
             Add new cabin
           </Button>
         </Modal.Open>

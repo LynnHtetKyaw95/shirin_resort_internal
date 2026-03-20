@@ -141,8 +141,8 @@ function Uploader() {
       <h3>SAMPLE DATA</h3>
 
       <Button
-        variation="primary"
-        size="small"
+        $variation="primary"
+        $size="small"
         onClick={uploadAll}
         disabled={isLoading}
       >
@@ -150,8 +150,8 @@ function Uploader() {
       </Button>
 
       <Button
-        variation="primary"
-        size="small"
+        $variation="primary"
+        $size="small"
         onClick={uploadBookings}
         disabled={isLoading}
       >

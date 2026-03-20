@@ -4,8 +4,8 @@ import Row from "../ui/Row";
 
 const Settings = () => {
   return (
-    <Row type="vertical">
-      <Heading as="h1">Update hotel settings</Heading>
+    <Row $type="vertical">
+      <Heading $as="h1">Update hotel settings</Heading>
       <UpdateSettingsForm />
     </Row>
   );

@@ -7,12 +7,12 @@ import CabinTableOperation from "../features/cabins/CabinTableOperation";
 const Cabins = () => {
   return (
     <>
-      <Row type="horizontal">
-        <Heading as="h1">All cabins</Heading>
+      <Row $type="horizontal">
+        <Heading $as="h1">All cabins</Heading>
         <CabinTableOperation />
       </Row>
 
-      <Row type="vertical">
+      <Row $type="vertical">
         <CabinTable />
         <AddCabin />
       </Row>
