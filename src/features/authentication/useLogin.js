@@ -11,7 +11,7 @@ export function useLogin() {
     mutationFn: ({ email, password }) => loginAPI({ email, password }),
     onSuccess: () => {
       queryClient.invalidateQueries({ active: true });
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     },
     onError: (error) => {
       console.log("ERROR", error);
