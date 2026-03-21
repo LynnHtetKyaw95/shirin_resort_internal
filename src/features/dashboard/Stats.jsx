@@ -12,6 +12,7 @@ const Stats = ({ bookings, confirmedStays, numDays, cabinCount }) => {
 
   // 3
   const checkIns = confirmedStays.length;
+  console.log(checkIns);
 
   // 4 = num checked in nights / all available nights (num dats * num of cabins)
   const occupation =
