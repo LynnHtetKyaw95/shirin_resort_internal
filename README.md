@@ -176,34 +176,17 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 ## Future Improvements
 
-### High Priority
+- Guest management system
+- Stripe payment integration
+- Booking calendar view
+- Guest self-service portal
 
-- [ ] **Email Notifications**: Send confirmation emails on booking creation
-- [ ] **Payment Integration**: Stripe integration for online payments
-- [ ] **Calendar View**: Visual booking calendar for cabins
-- [ ] **Guest Portal**: Separate interface for guests to manage their bookings
+## Highlights
 
-### Medium Priority
-
-- [ ] **Multi-language Support**: i18n for international guests
-- [ ] **Export Features**: Export bookings to CSV/Excel
-- [ ] **Advanced Search**: Full-text search for bookings and cabins
-- [ ] **Audit Logs**: Track all changes made by users
-
-### Lower Priority
-
-- [ ] **Mobile App**: React Native version for staff mobile access
-- [ ] **Analytics Dashboard**: More detailed charts and insights
-- [ ] **Kitchen Management**: Breakfast and meal tracking
-- [ ] **Housekeeping**: Room cleaning status and scheduling
-- [ ] **Maintenance Tracking**: Equipment and facility maintenance
-
-### Nice to Have
-
-- [ ] **Dark Mode Persistence**: Save preference to user profile
-- [ ] **Keyboard Shortcuts**: Power user shortcuts for common actions
-- [ ] **Drag & Drop**: Reorder cabins or booking priorities
-- [ ] **Print Views**: Optimized print layouts for receipts/reports
+- Real-world hotel workflow simulation
+- Clean architecture (feature-based)
+- Production-ready UI patterns
+- Scalable state management
 
 ---
 
