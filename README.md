@@ -26,7 +26,7 @@ This project simulates a real-world hotel admin system, focusing on usability, s
 
 ## Live Demo
 
-- **Vercel Deployment**: [shirin-resort.vercel.app](https://vercel.com/your-username/shirin-resort)
+- **Vercel Deployment**: https://shirin-resort.vercel.app/dashboard
 
 ## Technical Decisions
 
