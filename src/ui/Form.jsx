@@ -18,7 +18,8 @@ const Form = styled.form`
       width: 80rem;
     `}
     
-  overflow: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
   font-size: 1.4rem;
 `;
 

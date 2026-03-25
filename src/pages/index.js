@@ -6,3 +6,4 @@ export { default as Login } from "./Login";
 export { default as PageNotFound } from "./PageNotFound";
 export { default as Settings } from "./Settings";
 export { default as Users } from "./Users";
+export { default as Guests } from "./Guests";

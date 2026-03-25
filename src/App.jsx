@@ -8,6 +8,7 @@ import {
   Settings,
   Users,
   PageNotFound,
+  Guests,
 } from "./pages";
 import GlobalStyles from "./styles/GlobalStyle";
 import AppLayout from "./ui/AppLayout";
@@ -50,6 +51,7 @@ const App = () => {
               <Route path="check-in/:bookingId" element={<CheckIn />} />
               <Route path="cabins" element={<Cabins />} />
               <Route path="users" element={<Users />} />
+              <Route path="guests" element={<Guests />} />
               <Route path="settings" element={<Settings />} />
               <Route path="account" element={<Account />} />
             </Route>

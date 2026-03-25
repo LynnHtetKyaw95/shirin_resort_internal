@@ -2,7 +2,7 @@ import supabase, { supabaseUrl } from "./supabase";
 import { v4 as uuidv4 } from "uuid";
 
 export async function getAllCabins() {
-  let { data, error } = await supabase.from("cabins").select("*");
+  let { data, error } = await supabase.from("cabins").select("*").order("name");
 
   if (error) {
     console.error(error);
